@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: white;
+    text-align: center;
+}
+
+.header, .footer {
+    background: green;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+}
+.header {
+    font-family: 'Courier New', Courier, monospace;
+}
+.square {
+    float: left;
+    margin: 5px 10px 20px 0;
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+
+    border-top-left-radius: 15px;     
+    border-top-right-radius: 0;       
+    border-bottom-left-radius: 0;    
+    border-bottom-right-radius: 15px; 
+}
+
+
+.content {
+    background: blue;
+    color: white;
+    width: 500px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: left;
+    min-height: 500px;
+    line-height: 1.8;
+}
+.content h1 {
+    margin-bottom: 10px;
+}
+
+.center-link {
+    text-align: center;
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+
+.red {
+    color: red;
+}
+h2 {
+    word-spacing: 20px;
+}
+
+.blue {
+    color: cyan;
+    letter-spacing: 5px; 
+}
+
+ul {
+    padding-left: 50px;
+}
+.line {
+    text-decoration: line-through;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 40px);
+    grid-gap: 2px;
+    border: 2px solid grey;
+    padding: 2px; 
+    margin-top: 20px;
+    width: fit-content;
+    float: right;
+    margin-left: 20px;
+    clear: none;
+}
+
+.grid .cell {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border: 2px solid grey;
+    font-size: 12px;
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center; 
+    min-height: 35px;
+    font-weight: bold;
+}
+
+.grid .cell.green {
+    background-color: green;
+    grid-row: span 2;
+}
+
+.grid .cell.red {
+    background-color: red;
+    grid-column: span 2;
+}
+
+.styles-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.styles-text {
+    flex: 1;
+}
+
+.styles-text h3 {
+    margin-top: 0;
+}
+
+.small-image {
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    clear: both; 
+    float: right;
+   
+}
